@@ -28,10 +28,10 @@ for Essais in range (0,8):
             color = False
             for j in range (0,6):
                 if Mot[i] == playerInput[j]:
-                    print ( Back.YELLOW + playerInput[j])
+                    print ( Back.YELLOW + playerInput[i])
                     color = True
             if color == False :
-                print ( Back.BLUE + playerInput[j] )                
+                print ( Back.BLUE + playerInput[i] )                
     if Mot == playerInput :
         print (Back.RED + playerInput)
         print ("Vous avez gagné")
