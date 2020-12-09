@@ -37,7 +37,7 @@ for Essais in range (0,8):
                 print ( Back.BLUE + playerInput[i] , end =' ')
     print (Back.RESET + "")            
     if Mot == playerInput :
-        print ("Vous avez gagné")
+        print ("Vous avez gagné !")
         time.sleep(3)
         exit()
-print ("Vous avez perdu")
+print ("Vous avez perdu ! ")
