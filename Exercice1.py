@@ -23,7 +23,7 @@ Mot = random.choice(listeMot)
 print (Mot)
 
 for Essais in range (0,8):
-    playerInput = input(Back.RESET + "Saisir votre mot de 6 lettres   ")
+    playerInput = input("Saisir votre mot de 6 lettres   ")
     for i in range (0,6):
         if Mot[i] == playerInput[i]:
             print ( Back.RED + playerInput[i], end =' ' )
@@ -35,9 +35,9 @@ for Essais in range (0,8):
                     color = True
             if color == False :
                 print ( Back.BLUE + playerInput[i] , end =' ')
-    print ("")            
+    print (Back.RESET + "")            
     if Mot == playerInput :
-        print (Back.RESET + "Vous avez gagné")
+        print ("Vous avez gagné")
         time.sleep(3)
         exit()
 print ("Vous avez perdu")
